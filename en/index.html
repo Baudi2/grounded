@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grounded — Minecraft without magic</title>
+<meta name="description" content="A Fabric mod for Minecraft 26.3: no magic, no mysticism, no teleports - every mechanic re-explained as physics, chemistry or industry.">
+<link rel="icon" href="../assets/icon.png">
+<link rel="alternate" hreflang="ru" href="../">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Onest:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#"><img src="../assets/icon.png" alt="">Grounded</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#download">Download</a>
+      <a href="#travel">Travel</a>
+      <a href="#recipes">Recipes</a>
+      <a href="#robots">Robots</a>
+      <a href="#systems">Systems</a>
+      <a href="#world">World</a>
+      <a href="#bestiary">Bestiary</a>
+    </nav>
+    <div class="lang"><a href="../" hreflang="ru">RU</a><span>EN</span></div>
+  </div>
+</header>
+
+<main>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Grounded</h1>
+      <p class="tagline">Minecraft as it could actually exist.</p>
+      <p class="lead">A Fabric mod for Minecraft 26.3. There is no magic, no mysticism and no teleporting:
+      every fantastical mechanic is re-explained as physics, chemistry or industry. Almost everything you
+      know is still where it was - it just became honest.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://github.com/Baudi2/grounded/releases/download/v1.0.0/Grounded-MultiMC-1.0.0.zip">Download for MultiMC <small>.zip</small></a>
+        <a class="btn" href="https://github.com/Baudi2/grounded/releases/download/v1.0.0/grounded-1.0.0.jar">Mod only <small>.jar</small></a>
+      </div>
+      <ul class="reqs">
+        <li>Minecraft 26.3</li><li>Fabric Loader 0.19.5+</li><li>Fabric API</li><li>Java 25</li>
+        <li>version 1.0.0</li>
+      </ul>
+    </div>
+    <figure><img class="scene" src="../assets/scenes/pad_summits.png" alt="The pad to the Summits: iron, a coordinate receiver in the middle, control blocks on the corners" loading="lazy"></figure>
+  </div>
+</div>
+
+<section id="idea">
+  <div class="wrap">
+    <p class="kicker">The idea</p>
+    <h2>One test: could this exist?</h2>
+    <p class="intro">If yes, it stays. If not, it is explained anew or it goes. The mod does not add a new
+    world - it rethinks the old one: most items and mobs behave as before, but have new names, looks and
+    voices. The world stands on three pillars.</p>
+    <div class="cards">
+      <div class="card">
+        <h3><span class="pillar">🧍</span>People</h3>
+        <p><b>Blackroad</b> gangs on the Overworld's roads and the <b>Cinder Company</b>, mining sulfur and ore in
+        the volcano. There are no undead: the night is dangerous because of those who live by robbery.</p>
+      </div>
+      <div class="card">
+        <h3><span class="pillar">🤖</span>Machines</h3>
+        <p>The legacy of a collapsed industrial project: high-altitude stations, automatons, drones. They are
+        not evil but unfinished - running a protocol set by people who are gone.</p>
+      </div>
+      <div class="card">
+        <h3><span class="pillar">🐾</span>Animals</h3>
+        <p>Real animals stay animals. Bones now come from animals, while machines drop scrap metal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="download">
+  <div class="wrap">
+    <p class="kicker">Download and install</p>
+    <h2>Installation</h2>
+    <p class="intro">You need Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API and Java 25.
+    The easiest way is the ready MultiMC instance: it holds everything but the game itself, which the
+    launcher downloads on its own.</p>
+
+    <div class="two">
+      <div class="card">
+        <h3>MultiMC and Prism Launcher</h3>
+        <ol class="steps">
+          <li>Download <a href="https://github.com/Baudi2/grounded/releases/download/v1.0.0/Grounded-MultiMC-1.0.0.zip"><code>Grounded-MultiMC-1.0.0.zip</code></a>.</li>
+          <li>In the launcher: <b>Add Instance</b> → <b>Import from zip</b> → pick the file → <b>OK</b>.</li>
+          <li>In the instance settings (<b>Edit Instance</b> → <b>Settings</b> → <b>Java</b>) choose Java 25.
+          If you have none, get <a href="https://adoptium.net/">Adoptium Temurin 25</a>.</li>
+          <li><b>Launch</b>. The first time, the launcher downloads Minecraft and Fabric.</li>
+        </ol>
+        <p class="muted">The descriptions of Minecraft and Fabric travel inside the instance, so MultiMC's own
+        server is not needed to install it. The version list marks them as customized - that is intended.</p>
+      </div>
+      <div class="card">
+        <h3>The official launcher</h3>
+        <ol class="steps">
+          <li>Install Fabric Loader for 26.3 with the <a href="https://fabricmc.net/use/installer/">Fabric
+          installer</a>.</li>
+          <li>Download <a href="https://github.com/Baudi2/grounded/releases/download/v1.0.0/grounded-1.0.0.jar"><code>grounded-1.0.0.jar</code></a> and
+          <a href="https://modrinth.com/mod/fabric-api">Fabric API</a> for 26.3.</li>
+          <li>Put both files into the <code>.minecraft/mods</code> folder.</li>
+          <li>Start the Fabric profile.</li>
+        </ol>
+        <p class="muted">On a server the mod is needed by the server and by every player: the same two files go
+        into the server's <code>mods</code> folder.</p>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card"><h3>Language</h3><p>The mod is written in Russian first and fully supports English.
+      The MultiMC instance starts in Russian; switch under <b>Options → Language</b>.</p></div>
+      <div class="card"><h3>A new world</h3><p>Better start a new one: the Summits' terrain is made at
+      generation, and in an old world the places already explored stay as they were.</p></div>
+      <div class="card"><h3>Updating</h3><p>Replace the mod's jar in <code>mods</code> with the new one. Worlds
+      are kept. Every version is on the <a href="https://github.com/Baudi2/grounded/releases">releases page</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="travel">
+  <div class="wrap">
+    <p class="kicker">Travel</p>
+    <h2>Pads instead of portals</h2>
+    <p class="intro">There is no teleporting anywhere. An obsidian frame will not light, the Summits' portal
+    will not open, there is no chorus fruit, and the <span class="chip"><img src="../assets/icons/minecraft_ender_pearl.png" alt="" loading="lazy">Grappling Hook</span> (<code class="was">ender_pearl</code>) is a rope with a
+    hook: it does not move you, it pulls you. To the volcano and the Summits you <b>fly</b>: a craft comes to
+    pick you up from a pad.</p>
+
+    <div class="two">
+      <figure class="shot"><img class="scene" src="../assets/scenes/pad_volcano.png" alt="The pad to the volcano" loading="lazy">
+        <figcaption>The pad to the volcano: 20 obsidian, 4 blocks of mods, a control block in the middle</figcaption>
+      </figure>
+      <figure class="shot"><img class="scene" src="../assets/scenes/pad_summits.png" alt="The pad to the Summits" loading="lazy">
+        <figcaption>The pad to the Summits: 20 blocks of iron, 4 blocks of mods, a coordinate receiver in the
+        middle, 4 control blocks on the outer corners</figcaption>
+      </figure>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Calling a craft</h3>
+        <p>Build a 5×5 pad and stand on its centre. "They are coming for you" - stay for 3 seconds and the craft
+        takes you. Step off before that and the flight is called off. The centre decides where to:
+        a <span class="chip"><img src="../assets/icons/minecraft_carved_pumpkin.png" alt="" loading="lazy">Control Block</span> - the volcano, a <span class="chip"><img src="../assets/icons/minecraft_lodestone.png" alt="" loading="lazy">Coordinate Receiver</span> - the Summits.</p>
+      </div>
+      <div class="card">
+        <h3>Arrival</h3>
+        <p>The first flight finds solid ground, and a moment later the same pad rises under you. It is built
+        <b>once</b>: take it apart and you fix it yourself - there is no block farm. Later flights land on it.
+        In the volcano, lava next to the pad sets into basalt.</p>
+      </div>
+      <div class="card">
+        <h3>Going back</h3>
+        <p>Step off the arrival pad and onto its centre again - the craft brings you back to the pad you left
+        from.</p>
+      </div>
+      <div class="card">
+        <h3>The way to the Summits</h3>
+        <p>A <span class="chip"><img src="../assets/icons/minecraft_ender_eye.png" alt="" loading="lazy">Tracking Probe</span> flies towards a stronghold. Every chest in its library holds a
+        <span class="chip"><img src="../assets/icons/minecraft_echo_shard.png" alt="" loading="lazy">Coordinate Sensor</span> - the part the <span class="chip"><img src="../assets/icons/minecraft_lodestone.png" alt="" loading="lazy">Coordinate Receiver</span> for the pad is built from.</p>
+      </div>
+    </div>
+
+    <div class="two">
+      <figure class="shot"><img class="scene" src="../assets/scenes/podium.png" alt="The evacuation pad on the podium" loading="lazy">
+        <figcaption>Once the Summit Guard is down, the podium becomes an evacuation pad: blocks of mods around
+        the pillar, the Flight Recorder on top</figcaption>
+      </figure>
+      <figure class="shot"><img class="scene" src="../assets/scenes/pad_transfer.png" alt="A transfer pad" loading="lazy">
+        <figcaption>A transfer pad: prefab panels, a probe in its frame in the middle</figcaption>
+      </figure>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>Evacuation from the Summits</h3>
+        <p>There is no exit portal. When the Summit Guard is put out of action, the podium's floor becomes an
+        evacuation pad. The first time you get the flight recorder's log and the credits, then you are home;
+        after that it is an ordinary flight back.</p>
+      </div>
+      <div class="card">
+        <h3>To the outer islands</h3>
+        <p>There are no gateways. Instead, transfer pads rise on the main island after the Guard. Stand on the
+        frame in the middle and a craft takes you to the outer islands, where the same pad appears. There and
+        back as often as you like.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="recipes">
+  <div class="wrap">
+    <p class="kicker">Items and recipes</p>
+    <h2>What is crafted differently</h2>
+    <p class="intro">Recipes that needed materials with no honest explanation now use industrial ones: iron,
+    copper, gunpowder, wiring. The vanilla recipes of these items are replaced, not added alongside. The grey
+    label is the item's old id.</p>
+
+    <h3 style="margin-top:32px">The way to the Summits</h3>
+    <div class="cards">
+      <div class="card">
+        <figure class="recipe" aria-label="Recipe: Tracking Probe"><div class="grid"><span class="slot" title="Compass"><img src="../assets/icons/minecraft_compass.png" alt="Compass" loading="lazy"></span><span class="slot" title="Quartz"><img src="../assets/icons/minecraft_quartz.png" alt="Quartz" loading="lazy"></span><span class="slot" title="Wiring"><img src="../assets/icons/minecraft_redstone.png" alt="Wiring" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Tracking Probe"><img src="../assets/icons/minecraft_ender_eye.png" alt="Tracking Probe" loading="lazy"></span><figcaption>Tracking Probe<span class="shapeless">any arrangement</span></figcaption></figure>
+        <p>The compass gives the bearing, the quartz is the receiver's resonator, the wiring is the circuit.
+        Throw it and the probe flies towards a stronghold. <code class="was">ender_eye</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Recipe: Coordinate Receiver"><div class="grid"><span class="slot" title="Block of Diamond"><img src="../assets/icons/minecraft_diamond_block.png" alt="Block of Diamond" loading="lazy"></span><span class="slot" title="Coordinate Sensor"><img src="../assets/icons/minecraft_echo_shard.png" alt="Coordinate Sensor" loading="lazy"></span><span class="slot" title="Block of Diamond"><img src="../assets/icons/minecraft_diamond_block.png" alt="Block of Diamond" loading="lazy"></span><span class="slot" title="Block of Iron"><img src="../assets/icons/minecraft_iron_block.png" alt="Block of Iron" loading="lazy"></span><span class="slot" title="Refractory Ingot"><img src="../assets/icons/minecraft_netherite_ingot.png" alt="Refractory Ingot" loading="lazy"></span><span class="slot" title="Block of Iron"><img src="../assets/icons/minecraft_iron_block.png" alt="Block of Iron" loading="lazy"></span><span class="slot" title="Block of Iron"><img src="../assets/icons/minecraft_iron_block.png" alt="Block of Iron" loading="lazy"></span><span class="slot" title="Block of Iron"><img src="../assets/icons/minecraft_iron_block.png" alt="Block of Iron" loading="lazy"></span><span class="slot" title="Block of Iron"><img src="../assets/icons/minecraft_iron_block.png" alt="Block of Iron" loading="lazy"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Coordinate Receiver"><img src="../assets/icons/minecraft_lodestone.png" alt="Coordinate Receiver" loading="lazy"></span><figcaption>Coordinate Receiver</figcaption></figure>
+        <p>The centre of the pad to the Summits. The <span class="chip"><img src="../assets/icons/minecraft_echo_shard.png" alt="" loading="lazy">Coordinate Sensor</span> is not crafted - it is found in
+        stronghold libraries. <code class="was">lodestone</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Recipe: Network Safe"><div class="grid"><span class="slot" title="Block of Iron"><img src="../assets/icons/minecraft_iron_block.png" alt="Block of Iron" loading="lazy"></span><span class="slot" title="Block of Iron"><img src="../assets/icons/minecraft_iron_block.png" alt="Block of Iron" loading="lazy"></span><span class="slot" title="Block of Iron"><img src="../assets/icons/minecraft_iron_block.png" alt="Block of Iron" loading="lazy"></span><span class="slot" title="Block of Iron"><img src="../assets/icons/minecraft_iron_block.png" alt="Block of Iron" loading="lazy"></span><span class="slot" title="Tracking Probe"><img src="../assets/icons/minecraft_ender_eye.png" alt="Tracking Probe" loading="lazy"></span><span class="slot" title="Block of Iron"><img src="../assets/icons/minecraft_iron_block.png" alt="Block of Iron" loading="lazy"></span><span class="slot" title="Block of Iron"><img src="../assets/icons/minecraft_iron_block.png" alt="Block of Iron" loading="lazy"></span><span class="slot" title="Block of Iron"><img src="../assets/icons/minecraft_iron_block.png" alt="Block of Iron" loading="lazy"></span><span class="slot" title="Block of Iron"><img src="../assets/icons/minecraft_iron_block.png" alt="Block of Iron" loading="lazy"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Network Safe"><img src="../assets/icons/minecraft_ender_chest.png" alt="Network Safe" loading="lazy"></span><figcaption>Network Safe</figcaption></figure>
+        <p>A cell in a shared warehouse: every player has their own, and any safe opens it. The probe keeps the
+        link. <code class="was">ender_chest</code></p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:32px">Robots and light</h3>
+    <div class="cards">
+      <div class="card">
+        <figure class="recipe" aria-label="Recipe: Control Block"><div class="grid"><span class="slot" title="Wiring"><img src="../assets/icons/minecraft_redstone.png" alt="Wiring" loading="lazy"></span><span class="slot" title="Wiring"><img src="../assets/icons/minecraft_redstone.png" alt="Wiring" loading="lazy"></span><span class="slot" title="Wiring"><img src="../assets/icons/minecraft_redstone.png" alt="Wiring" loading="lazy"></span><span class="slot" title="Wiring"><img src="../assets/icons/minecraft_redstone.png" alt="Wiring" loading="lazy"></span><span class="slot" title="Block of Copper"><img src="../assets/icons/minecraft_copper_block.png" alt="Block of Copper" loading="lazy"></span><span class="slot" title="Wiring"><img src="../assets/icons/minecraft_redstone.png" alt="Wiring" loading="lazy"></span><span class="slot" title="Wiring"><img src="../assets/icons/minecraft_redstone.png" alt="Wiring" loading="lazy"></span><span class="slot" title="Wiring"><img src="../assets/icons/minecraft_redstone.png" alt="Wiring" loading="lazy"></span><span class="slot" title="Wiring"><img src="../assets/icons/minecraft_redstone.png" alt="Wiring" loading="lazy"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Control Block"><img src="../assets/icons/minecraft_carved_pumpkin.png" alt="Control Block" loading="lazy"></span><figcaption>Control Block</figcaption></figure>
+        <p>The head of every robot, and it can be worn. A plain pumpkin can no longer be carved with shears.
+        <code class="was">carved_pumpkin</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Recipe: Pumpkin Lantern"><div class="grid"><span class="slot" title="Pumpkin"><img src="../assets/icons/minecraft_pumpkin.png" alt="Pumpkin" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot" title="Torch"><img src="../assets/icons/minecraft_torch.png" alt="Torch" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Pumpkin Lantern"><img src="../assets/icons/minecraft_jack_o_lantern.png" alt="Pumpkin Lantern" loading="lazy"></span><figcaption>Pumpkin Lantern</figcaption></figure>
+        <p>A pumpkin over a torch is just a lamp: no face, and it builds no robots. <code class="was">jack_o_lantern</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Recipe: Luminous Panel"><div class="grid"><span class="slot" title="Phosphor Powder"><img src="../assets/icons/minecraft_glowstone_dust.png" alt="Phosphor Powder" loading="lazy"></span><span class="slot" title="Phosphor Powder"><img src="../assets/icons/minecraft_glowstone_dust.png" alt="Phosphor Powder" loading="lazy"></span><span class="slot" title="Glass"><img src="../assets/icons/minecraft_glass.png" alt="Glass" loading="lazy"></span><span class="slot" title="Glass"><img src="../assets/icons/minecraft_glass.png" alt="Glass" loading="lazy"></span><span class="slot" title="Glass"><img src="../assets/icons/minecraft_glass.png" alt="Glass" loading="lazy"></span><span class="slot" title="Glass"><img src="../assets/icons/minecraft_glass.png" alt="Glass" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Luminous Panel"><img src="../assets/icons/minecraft_glowstone.png" alt="Luminous Panel" loading="lazy"></span><figcaption>Luminous Panel<span class="shapeless">any arrangement</span></figcaption></figure>
+        <p>Phosphor powder behind glass. <code class="was">glowstone</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Recipe: Light Rod"><div class="grid"><span class="slot" title="Fuel Rod"><img src="../assets/icons/minecraft_blaze_rod.png" alt="Fuel Rod" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot" title="Phosphor Powder"><img src="../assets/icons/minecraft_glowstone_dust.png" alt="Phosphor Powder" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Light Rod"><img src="../assets/icons/minecraft_end_rod.png" alt="Light Rod" loading="lazy"><span class="count">4</span></span><figcaption>Light Rod</figcaption></figure>
+        <p>A fuel rod over phosphor powder, instead of chorus fruit. <code class="was">end_rod</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Recipe: Sulfur Torch"><div class="grid"><span class="slot cycle" style="--n:2" title="Coal / Charcoal"><img src="../assets/icons/minecraft_coal.png" alt="Coal" loading="lazy"><img src="../assets/icons/minecraft_charcoal.png" alt="Charcoal" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot" title="Stick"><img src="../assets/icons/minecraft_stick.png" alt="Stick" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot" title="Gunpowder"><img src="../assets/icons/minecraft_gunpowder.png" alt="Gunpowder" loading="lazy"></span><span class="slot"></span><span class="slot"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Sulfur Torch"><img src="../assets/icons/minecraft_soul_torch.png" alt="Sulfur Torch" loading="lazy"><span class="count">4</span></span><figcaption>Sulfur Torch</figcaption></figure>
+        <p>Coal and gunpowder: it burns with a sulfur flame. <code class="was">soul_torch</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Recipe: Sulfur Campfire"><div class="grid"><span class="slot"></span><span class="slot" title="Stick"><img src="../assets/icons/minecraft_stick.png" alt="Stick" loading="lazy"></span><span class="slot"></span><span class="slot" title="Stick"><img src="../assets/icons/minecraft_stick.png" alt="Stick" loading="lazy"></span><span class="slot" title="Gunpowder"><img src="../assets/icons/minecraft_gunpowder.png" alt="Gunpowder" loading="lazy"></span><span class="slot" title="Stick"><img src="../assets/icons/minecraft_stick.png" alt="Stick" loading="lazy"></span><span class="slot" title="Any log"><img src="../assets/icons/minecraft_oak_log.png" alt="Any log" loading="lazy"></span><span class="slot" title="Any log"><img src="../assets/icons/minecraft_oak_log.png" alt="Any log" loading="lazy"></span><span class="slot" title="Any log"><img src="../assets/icons/minecraft_oak_log.png" alt="Any log" loading="lazy"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Sulfur Campfire"><img src="../assets/icons/minecraft_soul_campfire.png" alt="Sulfur Campfire" loading="lazy"></span><figcaption>Sulfur Campfire</figcaption></figure>
+        <p>The same flame in a campfire. <code class="was">soul_campfire</code></p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:32px">Mods and chemistry</h3>
+    <div class="cards">
+      <div class="card">
+        <figure class="recipe" aria-label="Recipe: Mod Cartridge"><div class="grid"><span class="slot" title="Paper"><img src="../assets/icons/minecraft_paper.png" alt="Paper" loading="lazy"></span><span class="slot" title="Paper"><img src="../assets/icons/minecraft_paper.png" alt="Paper" loading="lazy"></span><span class="slot" title="Paper"><img src="../assets/icons/minecraft_paper.png" alt="Paper" loading="lazy"></span><span class="slot" title="Copper Ingot"><img src="../assets/icons/minecraft_copper_ingot.png" alt="Copper Ingot" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Mod Cartridge"><img src="../assets/icons/minecraft_book.png" alt="Mod Cartridge" loading="lazy"></span><figcaption>Mod Cartridge<span class="shapeless">any arrangement</span></figcaption></figure>
+        <p>The medium a mod is written to: paper and a copper contact instead of leather. <code class="was">book</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Recipe: Modification Bench"><div class="grid"><span class="slot" title="Block of Mods"><img src="../assets/icons/minecraft_lapis_block.png" alt="Block of Mods" loading="lazy"></span><span class="slot" title="Diamond"><img src="../assets/icons/minecraft_diamond.png" alt="Diamond" loading="lazy"></span><span class="slot" title="Block of Mods"><img src="../assets/icons/minecraft_lapis_block.png" alt="Block of Mods" loading="lazy"></span><span class="slot" title="Block of Mods"><img src="../assets/icons/minecraft_lapis_block.png" alt="Block of Mods" loading="lazy"></span><span class="slot" title="Mod Cartridge"><img src="../assets/icons/minecraft_book.png" alt="Mod Cartridge" loading="lazy"></span><span class="slot" title="Block of Mods"><img src="../assets/icons/minecraft_lapis_block.png" alt="Block of Mods" loading="lazy"></span><span class="slot" title="Block of Mods"><img src="../assets/icons/minecraft_lapis_block.png" alt="Block of Mods" loading="lazy"></span><span class="slot" title="Block of Mods"><img src="../assets/icons/minecraft_lapis_block.png" alt="Block of Mods" loading="lazy"></span><span class="slot" title="Block of Mods"><img src="../assets/icons/minecraft_lapis_block.png" alt="Block of Mods" loading="lazy"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Modification Bench"><img src="../assets/icons/minecraft_enchanting_table.png" alt="Modification Bench" loading="lazy"></span><figcaption>Modification Bench</figcaption></figure>
+        <p>The bench where mods are installed on gear. <code class="was">enchanting_table</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Recipe: Chemistry Station"><div class="grid"><span class="slot"></span><span class="slot" title="Fuel Rod"><img src="../assets/icons/minecraft_blaze_rod.png" alt="Fuel Rod" loading="lazy"></span><span class="slot"></span><span class="slot" title="Iron Ingot"><img src="../assets/icons/minecraft_iron_ingot.png" alt="Iron Ingot" loading="lazy"></span><span class="slot" title="Iron Ingot"><img src="../assets/icons/minecraft_iron_ingot.png" alt="Iron Ingot" loading="lazy"></span><span class="slot" title="Iron Ingot"><img src="../assets/icons/minecraft_iron_ingot.png" alt="Iron Ingot" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Chemistry Station"><img src="../assets/icons/minecraft_brewing_stand.png" alt="Chemistry Station" loading="lazy"></span><figcaption>Chemistry Station</figcaption></figure>
+        <p>A rack of flasks over a burner, for making compounds. <code class="was">brewing_stand</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Recipe: Prefab Panel"><div class="grid"><span class="slot" title="Stone"><img src="../assets/icons/minecraft_stone.png" alt="Stone" loading="lazy"></span><span class="slot" title="Iron Nugget"><img src="../assets/icons/minecraft_iron_nugget.png" alt="Iron Nugget" loading="lazy"></span><span class="slot"></span><span class="slot" title="Iron Nugget"><img src="../assets/icons/minecraft_iron_nugget.png" alt="Iron Nugget" loading="lazy"></span><span class="slot" title="Stone"><img src="../assets/icons/minecraft_stone.png" alt="Stone" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Prefab Panel"><img src="../assets/icons/minecraft_purpur_block.png" alt="Prefab Panel" loading="lazy"><span class="count">4</span></span><figcaption>Prefab Panel</figcaption></figure>
+        <p>The prefab panels of the high-altitude stations - from stone and iron. <code class="was">purpur_block</code></p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:32px">Emeralds and medicine</h3>
+    <div class="cards">
+      <div class="card">
+        <figure class="recipe" aria-label="Recipe: Emerald Nugget"><div class="grid"><span class="slot" title="Emerald"><img src="../assets/icons/minecraft_emerald.png" alt="Emerald" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Emerald Nugget"><img src="../assets/icons/grounded_emerald_nugget.png" alt="Emerald Nugget" loading="lazy"><span class="count">9</span></span><figcaption>Emerald Nugget<span class="shapeless">any arrangement</span></figcaption></figure>
+        <p>The only item the mod adds itself. Thugs, desert raiders, river scavengers, captives and the Scorched drop it instead of rotten flesh.</p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Recipe: Emerald"><div class="grid"><span class="slot" title="Emerald Nugget"><img src="../assets/icons/grounded_emerald_nugget.png" alt="Emerald Nugget" loading="lazy"></span><span class="slot" title="Emerald Nugget"><img src="../assets/icons/grounded_emerald_nugget.png" alt="Emerald Nugget" loading="lazy"></span><span class="slot" title="Emerald Nugget"><img src="../assets/icons/grounded_emerald_nugget.png" alt="Emerald Nugget" loading="lazy"></span><span class="slot" title="Emerald Nugget"><img src="../assets/icons/grounded_emerald_nugget.png" alt="Emerald Nugget" loading="lazy"></span><span class="slot" title="Emerald Nugget"><img src="../assets/icons/grounded_emerald_nugget.png" alt="Emerald Nugget" loading="lazy"></span><span class="slot" title="Emerald Nugget"><img src="../assets/icons/grounded_emerald_nugget.png" alt="Emerald Nugget" loading="lazy"></span><span class="slot" title="Emerald Nugget"><img src="../assets/icons/grounded_emerald_nugget.png" alt="Emerald Nugget" loading="lazy"></span><span class="slot" title="Emerald Nugget"><img src="../assets/icons/grounded_emerald_nugget.png" alt="Emerald Nugget" loading="lazy"></span><span class="slot" title="Emerald Nugget"><img src="../assets/icons/grounded_emerald_nugget.png" alt="Emerald Nugget" loading="lazy"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Emerald"><img src="../assets/icons/minecraft_emerald.png" alt="Emerald" loading="lazy"></span><figcaption>Emerald</figcaption></figure>
+        <p>Nine nuggets make an emerald, as with iron and gold.</p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Recipe: Auto-Medkit Chip"><div class="grid"><span class="slot" title="Block of Gold"><img src="../assets/icons/minecraft_gold_block.png" alt="Block of Gold" loading="lazy"></span><span class="slot" title="Amethyst Shard"><img src="../assets/icons/minecraft_amethyst_shard.png" alt="Amethyst Shard" loading="lazy"></span><span class="slot" title="Block of Gold"><img src="../assets/icons/minecraft_gold_block.png" alt="Block of Gold" loading="lazy"></span><span class="slot" title="Wiring"><img src="../assets/icons/minecraft_redstone.png" alt="Wiring" loading="lazy"></span><span class="slot" title="Block of Emerald"><img src="../assets/icons/minecraft_emerald_block.png" alt="Block of Emerald" loading="lazy"></span><span class="slot" title="Wiring"><img src="../assets/icons/minecraft_redstone.png" alt="Wiring" loading="lazy"></span><span class="slot" title="Block of Gold"><img src="../assets/icons/minecraft_gold_block.png" alt="Block of Gold" loading="lazy"></span><span class="slot" title="Amethyst Shard"><img src="../assets/icons/minecraft_amethyst_shard.png" alt="Amethyst Shard" loading="lazy"></span><span class="slot" title="Block of Gold"><img src="../assets/icons/minecraft_gold_block.png" alt="Block of Gold" loading="lazy"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Auto-Medkit Chip"><img src="../assets/icons/minecraft_totem_of_undying.png" alt="Auto-Medkit Chip" loading="lazy"></span><figcaption>Auto-Medkit Chip</figcaption></figure>
+        <p>Held in hand, it saves you when you are about to be put out of action: gets you back on your feet,
+        heals and protects. <code class="was">totem_of_undying</code></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="robots">
+  <div class="wrap">
+    <p class="kicker">Robots</p>
+    <h2>Built from blocks - the head is always a control block</h2>
+    <p class="intro">These machines are built from iron, copper and snow, so they are robots - in place of the
+    <code class="was">iron_golem</code> and its kin. Each one's head is a <span class="chip"><img src="../assets/icons/minecraft_carved_pumpkin.png" alt="" loading="lazy">Control Block</span>; a pumpkin lantern will not
+    do.</p>
+    <div class="builds">
+      <figure class="shot"><img class="scene" src="../assets/scenes/robot_iron.png" alt="Iron Robot" loading="lazy"><figcaption><b>Iron Robot</b> - four blocks
+      of iron in a T</figcaption></figure>
+      <figure class="shot"><img class="scene" src="../assets/scenes/robot_copper.png" alt="Copper Robot" loading="lazy"><figcaption><b>Copper Robot</b> - a block
+      of copper</figcaption></figure>
+      <figure class="shot"><img class="scene" src="../assets/scenes/robot_snow.png" alt="Snowblower" loading="lazy"><figcaption><b>Snowblower</b> - two snow
+      blocks</figcaption></figure>
+      <figure class="shot"><img class="scene" src="../assets/scenes/gunship.png" alt="Gunship" loading="lazy"><figcaption><b>Gunship</b> - a boss: an iron T, a
+      control block in the middle, three Sensor Blocks on top</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="systems">
+  <div class="wrap">
+    <p class="kicker">Systems</p>
+    <h2>The mechanics stay, the explanations are new</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Mods</h3>
+        <p>Gear is fitted with mods. <span class="chip"><img src="../assets/icons/minecraft_lapis_lazuli.png" alt="" loading="lazy">Mod</span> is the consumable, a
+        <span class="chip"><img src="../assets/icons/minecraft_book.png" alt="" loading="lazy">Mod Cartridge</span> the medium, a <span class="chip"><img src="../assets/icons/minecraft_enchanted_book.png" alt="" loading="lazy">Written Cartridge</span> a finished mod, a <span class="chip"><img src="../assets/icons/minecraft_bookshelf.png" alt="" loading="lazy">Cartridge Rack</span> powers the
+        <span class="chip"><img src="../assets/icons/minecraft_enchanting_table.png" alt="" loading="lazy">Modification Bench</span>. Experience is <b>data</b>: Data Fragments, the
+        <span class="chip"><img src="../assets/icons/minecraft_experience_bottle.png" alt="" loading="lazy">Data Cell</span>. The <span class="chip"><img src="../assets/icons/minecraft_anvil.png" alt="" loading="lazy">Service Bench</span> and the <span class="chip"><img src="../assets/icons/minecraft_grindstone.png" alt="" loading="lazy">Reset Bench</span> are benches.</p>
+      </div>
+      <div class="card">
+        <h3>Wiring</h3>
+        <p>Redstone is <span class="chip"><img src="../assets/icons/minecraft_redstone.png" alt="" loading="lazy">Wiring</span>: boards and wires of the collapsed project, dug out of the rock. A single
+        wire lies as a pad. Signal Torch, Electric Lamp.</p>
+      </div>
+      <div class="card">
+        <h3>Compounds</h3>
+        <p>A <span class="chip"><img src="../assets/icons/minecraft_potion.png" alt="" loading="lazy">Compound</span> (<code class="was">potion</code>) is made on a <span class="chip"><img src="../assets/icons/minecraft_brewing_stand.png" alt="" loading="lazy">Chemistry Station</span>: base, thrown and aerosol kinds.
+        The effects are chemistry - <code class="was">invisibility</code>, for one, became camouflage.</p>
+      </div>
+      <div class="card">
+        <h3>Stations</h3>
+        <p>A <span class="chip"><img src="../assets/icons/minecraft_beacon.png" alt="" loading="lazy">Power Station</span> is built around a <span class="chip"><img src="../assets/icons/minecraft_nether_star.png" alt="" loading="lazy">Power Core</span> and powers everyone's gear nearby. The
+        <span class="chip"><img src="../assets/icons/minecraft_conduit.png" alt="" loading="lazy">Underwater Station</span> does the same under water; its core is the <span class="chip"><img src="../assets/icons/minecraft_heart_of_the_sea.png" alt="" loading="lazy">Sea Core</span>.</p>
+      </div>
+      <div class="card">
+        <h3>Put out of action</h3>
+        <p>The player never dies but is <b>put out of action</b> - and returns to the game at the spawn point.
+        Animals and the world's people die as before: they do not come back.</p>
+      </div>
+      <div class="card">
+        <h3>Assembly capsules</h3>
+        <p>The <code class="was">*_spawn_egg</code> items are capsules: they assemble a machine or release a creature. Each
+        carries a portrait of what is inside.</p>
+      </div>
+    </div>
+    <p class="note">There are no religious symbols, superstitions or ghosts in the game - neither in texts nor
+    in textures. Even the crosshair became a ring.</p>
+  </div>
+</section>
+
+<section id="world">
+  <div class="wrap">
+    <p class="kicker">The world</p>
+    <h2>The Volcano and the Summits</h2>
+    <div class="two">
+      <div class="card">
+        <h3>The Volcano</h3>
+        <p>Formerly <code class="was">the_nether</code> - an active volcano where the Cinder Company mines sulfur and ore. Here is
+        Volcanic Rock, volcanic wastes and fortresses, <span class="chip"><img src="../assets/icons/minecraft_netherite_ingot.png" alt="" loading="lazy">Refractory Ingot</span>. The volcano's machines
+        work here - burner drones, balloon drones, walking loaders. The only way in is a flight.</p>
+      </div>
+      <div class="card">
+        <h3>The Summits</h3>
+        <p>Formerly <code class="was">the_end</code> - islands <b>on thin stems</b> over a sea of clouds: nothing hangs in the
+        air. Day and night under a dark high-altitude sky, and the first arrival is in the morning. The islands
+        are Limestone, with empty high-altitude stations of prefab panels on them, airships alongside,
+        and a <span class="chip"><img src="../assets/icons/minecraft_elytra.png" alt="" loading="lazy">Pack Wing</span> on board. The main island is guarded by the Summit Guard, powered by
+        Charging Emitters. The ending is the flight recorder's log instead of a poem.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="bestiary">
+  <div class="wrap">
+    <p class="kicker">Bestiary</p>
+    <h2>Who you will meet</h2>
+    <p class="intro">Every reworked mob is redrawn from head to toe, and each has its own voice: machines speak
+    with their native sounds through a robot filter.</p>
+
+    <div class="group">
+      <h3>Blackroad - the Overworld's gangs</h3>
+      <p>Road robbers. They come out at night, rob and take captives. Thugs, raiders, scavengers and captives drop emerald nuggets.</p>
+      <ul class="mobs"><li class="mob"><img src="../assets/mobs/zombie.png" alt="Thug" loading="lazy"><span class="mob-name">Thug</span><code class="was">zombie</code></li><li class="mob"><img src="../assets/mobs/husk.png" alt="Desert Raider" loading="lazy"><span class="mob-name">Desert Raider</span><code class="was">husk</code></li><li class="mob"><img src="../assets/mobs/drowned.png" alt="River Scavenger" loading="lazy"><span class="mob-name">River Scavenger</span><code class="was">drowned</code></li><li class="mob"><img src="../assets/mobs/zombie_villager.png" alt="Captive" loading="lazy"><span class="mob-name">Captive</span><code class="was">zombie_villager</code></li><li class="mob"><img src="../assets/mobs/witch.png" alt="Chemist" loading="lazy"><span class="mob-name">Chemist</span><code class="was">witch</code></li><li class="mob"><img src="../assets/mobs/pillager.png" alt="Pillager" loading="lazy"><span class="mob-name">Pillager</span><code class="was">pillager</code></li><li class="mob"><img src="../assets/mobs/vindicator.png" alt="Bruiser" loading="lazy"><span class="mob-name">Bruiser</span><code class="was">vindicator</code></li><li class="mob"><img src="../assets/mobs/zombie_horse.png" alt="Gang Horse" loading="lazy"><span class="mob-name">Gang Horse</span><code class="was">zombie_horse</code></li><li class="mob"><img src="../assets/mobs/camel_husk.png" alt="Raider Camel" loading="lazy"><span class="mob-name">Raider Camel</span><code class="was">camel_husk</code></li><li class="mob"><img src="../assets/mobs/zombie_nautilus.png" alt="Scavenger Nautilus" loading="lazy"><span class="mob-name">Scavenger Nautilus</span><code class="was">zombie_nautilus</code></li></ul>
+    </div>
+    <div class="group">
+      <h3>Cinder Company - the volcano's people</h3>
+      <p>Miners in respirators. The Scorched are workers poisoned by gas: leave them alone and they leave you
+      alone.</p>
+      <ul class="mobs"><li class="mob"><img src="../assets/mobs/piglin.png" alt="Prospector" loading="lazy"><span class="mob-name">Prospector</span><code class="was">piglin</code></li><li class="mob"><img src="../assets/mobs/piglin_brute.png" alt="Overseer" loading="lazy"><span class="mob-name">Overseer</span><code class="was">piglin_brute</code></li><li class="mob"><img src="../assets/mobs/zombified_piglin.png" alt="The Scorched" loading="lazy"><span class="mob-name">The Scorched</span><code class="was">zombified_piglin</code></li></ul>
+    </div>
+    <div class="group">
+      <h3>Automatons</h3>
+      <p>The project's machines on the ground. The archers are automatons of bright unpainted steel: you can see them
+      at night.</p>
+      <ul class="mobs"><li class="mob"><img src="../assets/mobs/skeleton.png" alt="Archer Automaton" loading="lazy"><span class="mob-name">Archer Automaton</span><code class="was">skeleton</code></li><li class="mob"><img src="../assets/mobs/stray.png" alt="Iced Automaton" loading="lazy"><span class="mob-name">Iced Automaton</span><code class="was">stray</code></li><li class="mob"><img src="../assets/mobs/bogged.png" alt="Swamp Automaton" loading="lazy"><span class="mob-name">Swamp Automaton</span><code class="was">bogged</code></li><li class="mob"><img src="../assets/mobs/parched.png" alt="Desert Automaton" loading="lazy"><span class="mob-name">Desert Automaton</span><code class="was">parched</code></li><li class="mob"><img src="../assets/mobs/wither_skeleton.png" alt="Heavy Automaton" loading="lazy"><span class="mob-name">Heavy Automaton</span><code class="was">wither_skeleton</code></li><li class="mob"><img src="../assets/mobs/evoker.png" alt="Sapper Automaton" loading="lazy"><span class="mob-name">Sapper Automaton</span><code class="was">evoker</code></li><li class="mob"><img src="../assets/mobs/skeleton_horse.png" alt="Mechanical Horse" loading="lazy"><span class="mob-name">Mechanical Horse</span><code class="was">skeleton_horse</code></li><li class="mob"><img src="../assets/mobs/creeper.png" alt="Self-Propelled Mine" loading="lazy"><span class="mob-name">Self-Propelled Mine</span><code class="was">creeper</code></li><li class="mob"><img src="../assets/mobs/enderman.png" alt="Steeplejack" loading="lazy"><span class="mob-name">Steeplejack</span><code class="was">enderman</code></li><li class="mob"><img src="../assets/mobs/endermite.png" alt="Crawler" loading="lazy"><span class="mob-name">Crawler</span><code class="was">endermite</code></li><li class="mob"><img src="../assets/mobs/silverfish.png" alt="Repair Bot" loading="lazy"><span class="mob-name">Repair Bot</span><code class="was">silverfish</code></li><li class="mob"><img src="../assets/mobs/creaking.png" alt="Camouflage Automaton" loading="lazy"><span class="mob-name">Camouflage Automaton</span><code class="was">creaking</code></li></ul>
+    </div>
+    <div class="group">
+      <h3>Drones and balloons</h3>
+      <ul class="mobs"><li class="mob"><img src="../assets/mobs/phantom.png" alt="Night Drone" loading="lazy"><span class="mob-name">Night Drone</span><code class="was">phantom</code></li><li class="mob"><img src="../assets/mobs/vex.png" alt="Strike Drone" loading="lazy"><span class="mob-name">Strike Drone</span><code class="was">vex</code></li><li class="mob"><img src="../assets/mobs/allay.png" alt="Courier Drone" loading="lazy"><span class="mob-name">Courier Drone</span><code class="was">allay</code></li><li class="mob"><img src="../assets/mobs/breeze.png" alt="Pneumatic Drone" loading="lazy"><span class="mob-name">Pneumatic Drone</span><code class="was">breeze</code></li><li class="mob"><img src="../assets/mobs/blaze.png" alt="Burner Drone" loading="lazy"><span class="mob-name">Burner Drone</span><code class="was">blaze</code></li><li class="mob"><img src="../assets/mobs/guardian.png" alt="Underwater Drone" loading="lazy"><span class="mob-name">Underwater Drone</span><code class="was">guardian</code></li><li class="mob"><img src="../assets/mobs/elder_guardian.png" alt="Jammer Drone" loading="lazy"><span class="mob-name">Jammer Drone</span><code class="was">elder_guardian</code></li><li class="mob"><img src="../assets/mobs/ghast.png" alt="Balloon Drone" loading="lazy"><span class="mob-name">Balloon Drone</span><code class="was">ghast</code></li><li class="mob"><img src="../assets/mobs/happy_ghast.png" alt="Transport Balloon" loading="lazy"><span class="mob-name">Transport Balloon</span><code class="was">happy_ghast</code></li></ul>
+    </div>
+    <div class="group">
+      <h3>Swarms</h3>
+      <p>Cubes are swarm robots of modules. A broken swarm, plain or heat-rated, falls apart into smaller ones.</p>
+      <ul class="mobs"><li class="mob"><img src="../assets/mobs/slime.png" alt="Swarm" loading="lazy"><span class="mob-name">Swarm</span><code class="was">slime</code></li><li class="mob"><img src="../assets/mobs/magma_cube.png" alt="Heat-Rated Swarm" loading="lazy"><span class="mob-name">Heat-Rated Swarm</span><code class="was">magma_cube</code></li><li class="mob"><img src="../assets/mobs/sulfur_cube.png" alt="Sulfur Collector" loading="lazy"><span class="mob-name">Sulfur Collector</span><code class="was">sulfur_cube</code></li></ul>
+    </div>
+    <div class="group">
+      <h3>Robots and heavy machines</h3>
+      <ul class="mobs"><li class="mob"><img src="../assets/mobs/iron_golem.png" alt="Iron Robot" loading="lazy"><span class="mob-name">Iron Robot</span><code class="was">iron_golem</code></li><li class="mob"><img src="../assets/mobs/copper_golem.png" alt="Copper Robot" loading="lazy"><span class="mob-name">Copper Robot</span><code class="was">copper_golem</code></li><li class="mob"><img src="../assets/mobs/snow_golem.png" alt="Snowblower" loading="lazy"><span class="mob-name">Snowblower</span><code class="was">snow_golem</code></li><li class="mob"><img src="../assets/mobs/strider.png" alt="Walking Loader" loading="lazy"><span class="mob-name">Walking Loader</span><code class="was">strider</code></li><li class="mob"><img src="../assets/mobs/shulker.png" alt="Pop-up Turret" loading="lazy"><span class="mob-name">Pop-up Turret</span><code class="was">shulker</code></li><li class="mob"><img src="../assets/mobs/warden.png" alt="Deep Guard" loading="lazy"><span class="mob-name">Deep Guard</span><code class="was">warden</code></li><li class="mob"><img src="../assets/mobs/wither.png" alt="Gunship" loading="lazy"><span class="mob-name">Gunship</span><code class="was">wither</code></li><li class="mob"><img src="../assets/mobs/ender_dragon.png" alt="Summit Guard" loading="lazy"><span class="mob-name">Summit Guard</span><code class="was">ender_dragon</code></li></ul>
+    </div>
+    <div class="group">
+      <h3>Animals</h3>
+      <p>Animals stay animals. A boar gone feral is a Rabid Boar, not undead.</p>
+      <ul class="mobs"><li class="mob"><img src="../assets/mobs/zoglin.png" alt="Rabid Boar" loading="lazy"><span class="mob-name">Rabid Boar</span><code class="was">zoglin</code></li></ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Grounded 1.0.0 · Minecraft 26.3 · Fabric</span>
+    <span><a href="https://github.com/Baudi2/grounded/releases">All versions</a> · <a href="../" hreflang="ru">Русский</a></span>
+    <span>NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</span>
+  </div>
+</footer>
+
+</body>
+</html>

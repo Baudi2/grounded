@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grounded — Minecraft без магии</title>
+<meta name="description" content="Мод для Minecraft 26.3 на Fabric: ни магии, ни мистики, ни телепортов — каждая механика объяснена как физика, химия или промышленность.">
+<link rel="icon" href="assets/icon.png">
+<link rel="alternate" hreflang="en" href="en/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Onest:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#"><img src="assets/icon.png" alt="">Grounded</a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#download">Скачать</a>
+      <a href="#travel">Путешествия</a>
+      <a href="#recipes">Рецепты</a>
+      <a href="#robots">Роботы</a>
+      <a href="#systems">Системы</a>
+      <a href="#world">Мир</a>
+      <a href="#bestiary">Бестиарий</a>
+    </nav>
+    <div class="lang"><span>RU</span><a href="en/" hreflang="en">EN</a></div>
+  </div>
+</header>
+
+<main>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Grounded</h1>
+      <p class="tagline">Minecraft, который мог бы существовать.</p>
+      <p class="lead">Мод для Minecraft 26.3 на Fabric. В нём нет магии, мистики и телепортов: каждая
+      фантастическая механика объяснена как физика, химия или промышленность. Почти всё, что вы знаете,
+      осталось на своих местах — только стало честным.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://github.com/Baudi2/grounded/releases/download/v1.0.0/Grounded-MultiMC-1.0.0.zip">Скачать для MultiMC <small>.zip</small></a>
+        <a class="btn" href="https://github.com/Baudi2/grounded/releases/download/v1.0.0/grounded-1.0.0.jar">Только мод <small>.jar</small></a>
+      </div>
+      <ul class="reqs">
+        <li>Minecraft 26.3</li><li>Fabric Loader 0.19.5+</li><li>Fabric API</li><li>Java 25</li>
+        <li>версия 1.0.0</li>
+      </ul>
+    </div>
+    <figure><img class="scene" src="assets/scenes/pad_summits.png" alt="Площадка на Вершины: железо, приёмник координат в центре, блоки управления на углах" loading="lazy"></figure>
+  </div>
+</div>
+
+<section id="idea">
+  <div class="wrap">
+    <p class="kicker">Замысел</p>
+    <h2>Одна проверка: могло ли это существовать?</h2>
+    <p class="intro">Если да — остаётся. Если нет — объясняется заново или уходит. Мод не добавляет новый
+    мир, а переосмысляет старый: у большинства предметов и мобов прежнее поведение, но новые имена, облик и
+    голоса. Мир держится на трёх опорах.</p>
+    <div class="cards">
+      <div class="card">
+        <h3><span class="pillar">🧍</span>Люди</h3>
+        <p>Банды <b>Blackroad</b> на дорогах Верхнего мира и <b>Cinder Company</b>, что добывает серу и руду в
+        вулкане. Нежити нет: ночь опасна не мертвецами, а теми, кто живёт грабежом.</p>
+      </div>
+      <div class="card">
+        <h3><span class="pillar">🤖</span>Машины</h3>
+        <p>Наследие рухнувшего индустриального проекта: высотные станции, автоматы, дроны. Они не злые, а
+        незавершённые — выполняют протокол, отданный теми, кого больше нет.</p>
+      </div>
+      <div class="card">
+        <h3><span class="pillar">🐾</span>Животные</h3>
+        <p>Настоящие звери остаются зверями. Кости теперь дают животные, а машины роняют металлолом.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="download">
+  <div class="wrap">
+    <p class="kicker">Скачать и установить</p>
+    <h2>Установка</h2>
+    <p class="intro">Нужны Minecraft 26.3, Fabric Loader 0.19.5 или новее, Fabric API и Java 25.
+    Проще всего — готовый экземпляр для MultiMC: в нём уже есть всё, кроме самой игры, которую лаунчер
+    скачает сам.</p>
+
+    <div class="two">
+      <div class="card">
+        <h3>MultiMC и Prism Launcher</h3>
+        <ol class="steps">
+          <li>Скачайте <a href="https://github.com/Baudi2/grounded/releases/download/v1.0.0/Grounded-MultiMC-1.0.0.zip"><code>Grounded-MultiMC-1.0.0.zip</code></a>.</li>
+          <li>В лаунчере: <b>Add Instance</b> → <b>Import from zip</b> → выберите файл → <b>OK</b>.</li>
+          <li>В настройках экземпляра (<b>Edit Instance</b> → <b>Settings</b> → <b>Java</b>) выберите
+          Java 25. Если её нет — <a href="https://adoptium.net/">Adoptium Temurin 25</a>.</li>
+          <li><b>Launch</b>. В первый раз лаунчер скачает Minecraft и Fabric.</li>
+        </ol>
+        <p class="muted">Описания Minecraft и Fabric лежат в самом экземпляре, поэтому сервер MultiMC для
+        установки не нужен. В окне версий они помечены как изменённые — так и задумано.</p>
+      </div>
+      <div class="card">
+        <h3>Официальный лаунчер</h3>
+        <ol class="steps">
+          <li>Установите Fabric Loader для 26.3 <a href="https://fabricmc.net/use/installer/">установщиком
+          Fabric</a>.</li>
+          <li>Скачайте <a href="https://github.com/Baudi2/grounded/releases/download/v1.0.0/grounded-1.0.0.jar"><code>grounded-1.0.0.jar</code></a> и
+          <a href="https://modrinth.com/mod/fabric-api">Fabric API</a> для 26.3.</li>
+          <li>Положите оба файла в папку <code>.minecraft/mods</code>.</li>
+          <li>Запустите профиль Fabric.</li>
+        </ol>
+        <p class="muted">На сервере мод нужен и серверу, и каждому игроку: те же два файла — в папку
+        <code>mods</code> сервера.</p>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card"><h3>Язык</h3><p>Мод написан по-русски, английский поддерживается полностью.
+      Экземпляр для MultiMC запускается на русском; сменить — <b>Настройки → Язык</b>.</p></div>
+      <div class="card"><h3>Новый мир</h3><p>Лучше начать новый: рельеф Вершин создаётся при генерации, и в
+      старом мире уже открытые места останутся прежними.</p></div>
+      <div class="card"><h3>Обновление</h3><p>Замените jar мода в папке <code>mods</code> на новый. Миры
+      сохраняются. Все версии — на <a href="https://github.com/Baudi2/grounded/releases">странице релизов</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="travel">
+  <div class="wrap">
+    <p class="kicker">Путешествия</p>
+    <h2>Площадки вместо порталов</h2>
+    <p class="intro">Телепортов в мире нет. Рамка из обсидиана не зажигается, портал Вершин не открывается,
+    плода хоруса нет, а <span class="chip"><img src="assets/icons/minecraft_ender_pearl.png" alt="" loading="lazy">Крюк-кошка</span> (<code class="was">ender_pearl</code>) — трос с крюком: он не переносит вас, а
+    подтягивает. В вулкан и на Вершины летают <b>бортом</b>: за вами прилетают на площадку.</p>
+
+    <div class="two">
+      <figure class="shot"><img class="scene" src="assets/scenes/pad_volcano.png" alt="Площадка в вулкан" loading="lazy">
+        <figcaption>Площадка в вулкан. Обсидиан: 20, блоки модов: 4,
+        в центре — блок управления</figcaption>
+      </figure>
+      <figure class="shot"><img class="scene" src="assets/scenes/pad_summits.png" alt="Площадка на Вершины" loading="lazy">
+        <figcaption>Площадка на Вершины. Железные блоки: 20, блоки модов:
+        4, в центре — приёмник координат, на внешних углах — блоки управления:
+        4</figcaption>
+      </figure>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Как вызвать борт</h3>
+        <p>Постройте площадку 5×5 и встаньте на её центр. «За вами вылетели» — стойте 3 секунды, и борт
+        увезёт вас. Сойдёте раньше — вылет отменится. Центр решает, куда лететь:
+        <span class="chip"><img src="assets/icons/minecraft_carved_pumpkin.png" alt="" loading="lazy">Блок управления</span> — в вулкан, <span class="chip"><img src="assets/icons/minecraft_lodestone.png" alt="" loading="lazy">Приёмник координат</span> — на Вершины.</p>
+      </div>
+      <div class="card">
+        <h3>Прибытие</h3>
+        <p>Первый вылет находит твёрдую землю, и через мгновение под вами встаёт такая же площадка. Она
+        строится <b>один раз</b>: разберёте её — чинить придётся самим, фермы блоков нет. Следующие вылеты
+        садятся на неё же. В вулкане лава рядом с площадкой застывает базальтом.</p>
+      </div>
+      <div class="card">
+        <h3>Обратно</h3>
+        <p>Сойдите с площадки прибытия и встаньте на центр снова — борт вернёт вас на ту площадку, с которой
+        вы улетели.</p>
+      </div>
+      <div class="card">
+        <h3>Путь на Вершины</h3>
+        <p><span class="chip"><img src="assets/icons/minecraft_ender_eye.png" alt="" loading="lazy">Зонд-пеленгатор</span> летит к крепости. В каждом сундуке её библиотеки лежит
+        <span class="chip"><img src="assets/icons/minecraft_echo_shard.png" alt="" loading="lazy">Датчик координат</span> — из него и собирается <span class="chip"><img src="assets/icons/minecraft_lodestone.png" alt="" loading="lazy">Приёмник координат</span> для площадки.</p>
+      </div>
+    </div>
+
+    <div class="two">
+      <figure class="shot"><img class="scene" src="assets/scenes/podium.png" alt="Эвакуационная площадка на подиуме" loading="lazy">
+        <figcaption>После Стража Вершин подиум становится эвакуационной площадкой: блоки модов вокруг
+        колонны, на колонне — Бортовой самописец</figcaption>
+      </figure>
+      <figure class="shot"><img class="scene" src="assets/scenes/pad_transfer.png" alt="Площадка переброски" loading="lazy">
+        <figcaption>Площадка переброски: сборные панели, в центре рамка с зондом</figcaption>
+      </figure>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>Эвакуация с Вершин</h3>
+        <p>Выходного портала нет. Когда Страж Вершин выведен из строя, пол подиума становится
+        эвакуационной площадкой. В первый раз — запись бортового самописца и титры, потом вы дома; дальше это
+        обычный обратный вылет.</p>
+      </div>
+      <div class="card">
+        <h3>К дальним островам</h3>
+        <p>Врат нет. Вместо них после Стража на главном острове встают площадки переброски. Встаньте на рамку
+        в центре — борт отвезёт к дальним островам, и там появится такая же площадка. Туда и обратно —
+        сколько угодно.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="recipes">
+  <div class="wrap">
+    <p class="kicker">Предметы и рецепты</p>
+    <h2>Что крафтится по-новому</h2>
+    <p class="intro">Рецепты, которым нужно было сырьё без честного объяснения, переведены на промышленное:
+    железо, медь, порох, проводку. Ванильные рецепты этих предметов заменены, а не добавлены рядом. Серой
+    подписью — прежний id предмета.</p>
+
+    <h3 style="margin-top:32px">Путь на Вершины</h3>
+    <div class="cards">
+      <div class="card">
+        <figure class="recipe" aria-label="Рецепт: Зонд-пеленгатор"><div class="grid"><span class="slot" title="Компас"><img src="assets/icons/minecraft_compass.png" alt="Компас" loading="lazy"></span><span class="slot" title="Кварц"><img src="assets/icons/minecraft_quartz.png" alt="Кварц" loading="lazy"></span><span class="slot" title="Проводка"><img src="assets/icons/minecraft_redstone.png" alt="Проводка" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Зонд-пеленгатор"><img src="assets/icons/minecraft_ender_eye.png" alt="Зонд-пеленгатор" loading="lazy"></span><figcaption>Зонд-пеленгатор<span class="shapeless">в любом порядке</span></figcaption></figure>
+        <p>Компас задаёт направление, кварц — резонатор приёмника, проводка — схема. Бросьте — зонд полетит к
+        крепости. <code class="was">ender_eye</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Рецепт: Приёмник координат"><div class="grid"><span class="slot" title="Алмазный блок"><img src="assets/icons/minecraft_diamond_block.png" alt="Алмазный блок" loading="lazy"></span><span class="slot" title="Датчик координат"><img src="assets/icons/minecraft_echo_shard.png" alt="Датчик координат" loading="lazy"></span><span class="slot" title="Алмазный блок"><img src="assets/icons/minecraft_diamond_block.png" alt="Алмазный блок" loading="lazy"></span><span class="slot" title="Железный блок"><img src="assets/icons/minecraft_iron_block.png" alt="Железный блок" loading="lazy"></span><span class="slot" title="Слиток жаропрочного сплава"><img src="assets/icons/minecraft_netherite_ingot.png" alt="Слиток жаропрочного сплава" loading="lazy"></span><span class="slot" title="Железный блок"><img src="assets/icons/minecraft_iron_block.png" alt="Железный блок" loading="lazy"></span><span class="slot" title="Железный блок"><img src="assets/icons/minecraft_iron_block.png" alt="Железный блок" loading="lazy"></span><span class="slot" title="Железный блок"><img src="assets/icons/minecraft_iron_block.png" alt="Железный блок" loading="lazy"></span><span class="slot" title="Железный блок"><img src="assets/icons/minecraft_iron_block.png" alt="Железный блок" loading="lazy"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Приёмник координат"><img src="assets/icons/minecraft_lodestone.png" alt="Приёмник координат" loading="lazy"></span><figcaption>Приёмник координат</figcaption></figure>
+        <p>Центр площадки на Вершины. <span class="chip"><img src="assets/icons/minecraft_echo_shard.png" alt="" loading="lazy">Датчик координат</span> не крафтится — он в библиотеках крепостей.
+        <code class="was">lodestone</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Рецепт: Сетевой сейф"><div class="grid"><span class="slot" title="Железный блок"><img src="assets/icons/minecraft_iron_block.png" alt="Железный блок" loading="lazy"></span><span class="slot" title="Железный блок"><img src="assets/icons/minecraft_iron_block.png" alt="Железный блок" loading="lazy"></span><span class="slot" title="Железный блок"><img src="assets/icons/minecraft_iron_block.png" alt="Железный блок" loading="lazy"></span><span class="slot" title="Железный блок"><img src="assets/icons/minecraft_iron_block.png" alt="Железный блок" loading="lazy"></span><span class="slot" title="Зонд-пеленгатор"><img src="assets/icons/minecraft_ender_eye.png" alt="Зонд-пеленгатор" loading="lazy"></span><span class="slot" title="Железный блок"><img src="assets/icons/minecraft_iron_block.png" alt="Железный блок" loading="lazy"></span><span class="slot" title="Железный блок"><img src="assets/icons/minecraft_iron_block.png" alt="Железный блок" loading="lazy"></span><span class="slot" title="Железный блок"><img src="assets/icons/minecraft_iron_block.png" alt="Железный блок" loading="lazy"></span><span class="slot" title="Железный блок"><img src="assets/icons/minecraft_iron_block.png" alt="Железный блок" loading="lazy"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Сетевой сейф"><img src="assets/icons/minecraft_ender_chest.png" alt="Сетевой сейф" loading="lazy"></span><figcaption>Сетевой сейф</figcaption></figure>
+        <p>Ячейка на общем складе: у каждого игрока своя, и открывает её любой сейф. Связь держит зонд.
+        <code class="was">ender_chest</code></p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:32px">Роботы и свет</h3>
+    <div class="cards">
+      <div class="card">
+        <figure class="recipe" aria-label="Рецепт: Блок управления"><div class="grid"><span class="slot" title="Проводка"><img src="assets/icons/minecraft_redstone.png" alt="Проводка" loading="lazy"></span><span class="slot" title="Проводка"><img src="assets/icons/minecraft_redstone.png" alt="Проводка" loading="lazy"></span><span class="slot" title="Проводка"><img src="assets/icons/minecraft_redstone.png" alt="Проводка" loading="lazy"></span><span class="slot" title="Проводка"><img src="assets/icons/minecraft_redstone.png" alt="Проводка" loading="lazy"></span><span class="slot" title="Медный блок"><img src="assets/icons/minecraft_copper_block.png" alt="Медный блок" loading="lazy"></span><span class="slot" title="Проводка"><img src="assets/icons/minecraft_redstone.png" alt="Проводка" loading="lazy"></span><span class="slot" title="Проводка"><img src="assets/icons/minecraft_redstone.png" alt="Проводка" loading="lazy"></span><span class="slot" title="Проводка"><img src="assets/icons/minecraft_redstone.png" alt="Проводка" loading="lazy"></span><span class="slot" title="Проводка"><img src="assets/icons/minecraft_redstone.png" alt="Проводка" loading="lazy"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Блок управления"><img src="assets/icons/minecraft_carved_pumpkin.png" alt="Блок управления" loading="lazy"></span><figcaption>Блок управления</figcaption></figure>
+        <p>Голова всех роботов, надевается на голову. Обычную тыкву ножницами больше не вырезать.
+        <code class="was">carved_pumpkin</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Рецепт: Тыквенный фонарь"><div class="grid"><span class="slot" title="Тыква"><img src="assets/icons/minecraft_pumpkin.png" alt="Тыква" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot" title="Факел"><img src="assets/icons/minecraft_torch.png" alt="Факел" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Тыквенный фонарь"><img src="assets/icons/minecraft_jack_o_lantern.png" alt="Тыквенный фонарь" loading="lazy"></span><figcaption>Тыквенный фонарь</figcaption></figure>
+        <p>Тыква над факелом — просто лампа: без лица и роботов не собирает. <code class="was">jack_o_lantern</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Рецепт: Световая панель"><div class="grid"><span class="slot" title="Фосфорный порошок"><img src="assets/icons/minecraft_glowstone_dust.png" alt="Фосфорный порошок" loading="lazy"></span><span class="slot" title="Фосфорный порошок"><img src="assets/icons/minecraft_glowstone_dust.png" alt="Фосфорный порошок" loading="lazy"></span><span class="slot" title="Стекло"><img src="assets/icons/minecraft_glass.png" alt="Стекло" loading="lazy"></span><span class="slot" title="Стекло"><img src="assets/icons/minecraft_glass.png" alt="Стекло" loading="lazy"></span><span class="slot" title="Стекло"><img src="assets/icons/minecraft_glass.png" alt="Стекло" loading="lazy"></span><span class="slot" title="Стекло"><img src="assets/icons/minecraft_glass.png" alt="Стекло" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Световая панель"><img src="assets/icons/minecraft_glowstone.png" alt="Световая панель" loading="lazy"></span><figcaption>Световая панель<span class="shapeless">в любом порядке</span></figcaption></figure>
+        <p>Фосфорный порошок за стеклом. <code class="was">glowstone</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Рецепт: Световой стержень"><div class="grid"><span class="slot" title="Топливный стержень"><img src="assets/icons/minecraft_blaze_rod.png" alt="Топливный стержень" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot" title="Фосфорный порошок"><img src="assets/icons/minecraft_glowstone_dust.png" alt="Фосфорный порошок" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Световой стержень"><img src="assets/icons/minecraft_end_rod.png" alt="Световой стержень" loading="lazy"><span class="count">4</span></span><figcaption>Световой стержень</figcaption></figure>
+        <p>Топливный стержень над фосфорным порошком — вместо плода хоруса. <code class="was">end_rod</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Рецепт: Серный факел"><div class="grid"><span class="slot cycle" style="--n:2" title="Уголь / Древесный уголь"><img src="assets/icons/minecraft_coal.png" alt="Уголь" loading="lazy"><img src="assets/icons/minecraft_charcoal.png" alt="Древесный уголь" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot" title="Палка"><img src="assets/icons/minecraft_stick.png" alt="Палка" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot" title="Порох"><img src="assets/icons/minecraft_gunpowder.png" alt="Порох" loading="lazy"></span><span class="slot"></span><span class="slot"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Серный факел"><img src="assets/icons/minecraft_soul_torch.png" alt="Серный факел" loading="lazy"><span class="count">4</span></span><figcaption>Серный факел</figcaption></figure>
+        <p>Уголь и порох: горит серным пламенем. <code class="was">soul_torch</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Рецепт: Серный костёр"><div class="grid"><span class="slot"></span><span class="slot" title="Палка"><img src="assets/icons/minecraft_stick.png" alt="Палка" loading="lazy"></span><span class="slot"></span><span class="slot" title="Палка"><img src="assets/icons/minecraft_stick.png" alt="Палка" loading="lazy"></span><span class="slot" title="Порох"><img src="assets/icons/minecraft_gunpowder.png" alt="Порох" loading="lazy"></span><span class="slot" title="Палка"><img src="assets/icons/minecraft_stick.png" alt="Палка" loading="lazy"></span><span class="slot" title="Любое бревно"><img src="assets/icons/minecraft_oak_log.png" alt="Любое бревно" loading="lazy"></span><span class="slot" title="Любое бревно"><img src="assets/icons/minecraft_oak_log.png" alt="Любое бревно" loading="lazy"></span><span class="slot" title="Любое бревно"><img src="assets/icons/minecraft_oak_log.png" alt="Любое бревно" loading="lazy"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Серный костёр"><img src="assets/icons/minecraft_soul_campfire.png" alt="Серный костёр" loading="lazy"></span><figcaption>Серный костёр</figcaption></figure>
+        <p>То же пламя в костре. <code class="was">soul_campfire</code></p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:32px">Модификации и химия</h3>
+    <div class="cards">
+      <div class="card">
+        <figure class="recipe" aria-label="Рецепт: Картридж мода"><div class="grid"><span class="slot" title="Бумага"><img src="assets/icons/minecraft_paper.png" alt="Бумага" loading="lazy"></span><span class="slot" title="Бумага"><img src="assets/icons/minecraft_paper.png" alt="Бумага" loading="lazy"></span><span class="slot" title="Бумага"><img src="assets/icons/minecraft_paper.png" alt="Бумага" loading="lazy"></span><span class="slot" title="Медный слиток"><img src="assets/icons/minecraft_copper_ingot.png" alt="Медный слиток" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Картридж мода"><img src="assets/icons/minecraft_book.png" alt="Картридж мода" loading="lazy"></span><figcaption>Картридж мода<span class="shapeless">в любом порядке</span></figcaption></figure>
+        <p>Носитель, на который записывают мод: бумага и медный контакт вместо кожи. <code class="was">book</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Рецепт: Стол модификации"><div class="grid"><span class="slot" title="Блок модов"><img src="assets/icons/minecraft_lapis_block.png" alt="Блок модов" loading="lazy"></span><span class="slot" title="Алмаз"><img src="assets/icons/minecraft_diamond.png" alt="Алмаз" loading="lazy"></span><span class="slot" title="Блок модов"><img src="assets/icons/minecraft_lapis_block.png" alt="Блок модов" loading="lazy"></span><span class="slot" title="Блок модов"><img src="assets/icons/minecraft_lapis_block.png" alt="Блок модов" loading="lazy"></span><span class="slot" title="Картридж мода"><img src="assets/icons/minecraft_book.png" alt="Картридж мода" loading="lazy"></span><span class="slot" title="Блок модов"><img src="assets/icons/minecraft_lapis_block.png" alt="Блок модов" loading="lazy"></span><span class="slot" title="Блок модов"><img src="assets/icons/minecraft_lapis_block.png" alt="Блок модов" loading="lazy"></span><span class="slot" title="Блок модов"><img src="assets/icons/minecraft_lapis_block.png" alt="Блок модов" loading="lazy"></span><span class="slot" title="Блок модов"><img src="assets/icons/minecraft_lapis_block.png" alt="Блок модов" loading="lazy"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Стол модификации"><img src="assets/icons/minecraft_enchanting_table.png" alt="Стол модификации" loading="lazy"></span><figcaption>Стол модификации</figcaption></figure>
+        <p>Стол, где моды ставят на снаряжение. <code class="was">enchanting_table</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Рецепт: Химическая установка"><div class="grid"><span class="slot"></span><span class="slot" title="Топливный стержень"><img src="assets/icons/minecraft_blaze_rod.png" alt="Топливный стержень" loading="lazy"></span><span class="slot"></span><span class="slot" title="Железный слиток"><img src="assets/icons/minecraft_iron_ingot.png" alt="Железный слиток" loading="lazy"></span><span class="slot" title="Железный слиток"><img src="assets/icons/minecraft_iron_ingot.png" alt="Железный слиток" loading="lazy"></span><span class="slot" title="Железный слиток"><img src="assets/icons/minecraft_iron_ingot.png" alt="Железный слиток" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Химическая установка"><img src="assets/icons/minecraft_brewing_stand.png" alt="Химическая установка" loading="lazy"></span><figcaption>Химическая установка</figcaption></figure>
+        <p>Штатив с колбами над горелкой: здесь варят препараты. <code class="was">brewing_stand</code></p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Рецепт: Сборная панель"><div class="grid"><span class="slot" title="Камень"><img src="assets/icons/minecraft_stone.png" alt="Камень" loading="lazy"></span><span class="slot" title="Кусочек железа"><img src="assets/icons/minecraft_iron_nugget.png" alt="Кусочек железа" loading="lazy"></span><span class="slot"></span><span class="slot" title="Кусочек железа"><img src="assets/icons/minecraft_iron_nugget.png" alt="Кусочек железа" loading="lazy"></span><span class="slot" title="Камень"><img src="assets/icons/minecraft_stone.png" alt="Камень" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Сборная панель"><img src="assets/icons/minecraft_purpur_block.png" alt="Сборная панель" loading="lazy"><span class="count">4</span></span><figcaption>Сборная панель</figcaption></figure>
+        <p>Сборные панели высотных станций — из камня и железа. <code class="was">purpur_block</code></p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:32px">Изумруды и медицина</h3>
+    <div class="cards">
+      <div class="card">
+        <figure class="recipe" aria-label="Рецепт: Кусочек изумруда"><div class="grid"><span class="slot" title="Изумруд"><img src="assets/icons/minecraft_emerald.png" alt="Изумруд" loading="lazy"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span><span class="slot"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Кусочек изумруда"><img src="assets/icons/grounded_emerald_nugget.png" alt="Кусочек изумруда" loading="lazy"><span class="count">9</span></span><figcaption>Кусочек изумруда<span class="shapeless">в любом порядке</span></figcaption></figure>
+        <p>Единственный предмет, который мод добавляет сам. Падает вместо тухлого мяса с головорезов, налётчиков, падальщиков, пленников и обожжённых.</p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Рецепт: Изумруд"><div class="grid"><span class="slot" title="Кусочек изумруда"><img src="assets/icons/grounded_emerald_nugget.png" alt="Кусочек изумруда" loading="lazy"></span><span class="slot" title="Кусочек изумруда"><img src="assets/icons/grounded_emerald_nugget.png" alt="Кусочек изумруда" loading="lazy"></span><span class="slot" title="Кусочек изумруда"><img src="assets/icons/grounded_emerald_nugget.png" alt="Кусочек изумруда" loading="lazy"></span><span class="slot" title="Кусочек изумруда"><img src="assets/icons/grounded_emerald_nugget.png" alt="Кусочек изумруда" loading="lazy"></span><span class="slot" title="Кусочек изумруда"><img src="assets/icons/grounded_emerald_nugget.png" alt="Кусочек изумруда" loading="lazy"></span><span class="slot" title="Кусочек изумруда"><img src="assets/icons/grounded_emerald_nugget.png" alt="Кусочек изумруда" loading="lazy"></span><span class="slot" title="Кусочек изумруда"><img src="assets/icons/grounded_emerald_nugget.png" alt="Кусочек изумруда" loading="lazy"></span><span class="slot" title="Кусочек изумруда"><img src="assets/icons/grounded_emerald_nugget.png" alt="Кусочек изумруда" loading="lazy"></span><span class="slot" title="Кусочек изумруда"><img src="assets/icons/grounded_emerald_nugget.png" alt="Кусочек изумруда" loading="lazy"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Изумруд"><img src="assets/icons/minecraft_emerald.png" alt="Изумруд" loading="lazy"></span><figcaption>Изумруд</figcaption></figure>
+        <p>Девять кусочков — изумруд, как у железа и золота.</p>
+      </div>
+      <div class="card">
+        <figure class="recipe" aria-label="Рецепт: Чип автоаптечки"><div class="grid"><span class="slot" title="Золотой блок"><img src="assets/icons/minecraft_gold_block.png" alt="Золотой блок" loading="lazy"></span><span class="slot" title="Осколок аметиста"><img src="assets/icons/minecraft_amethyst_shard.png" alt="Осколок аметиста" loading="lazy"></span><span class="slot" title="Золотой блок"><img src="assets/icons/minecraft_gold_block.png" alt="Золотой блок" loading="lazy"></span><span class="slot" title="Проводка"><img src="assets/icons/minecraft_redstone.png" alt="Проводка" loading="lazy"></span><span class="slot" title="Изумрудный блок"><img src="assets/icons/minecraft_emerald_block.png" alt="Изумрудный блок" loading="lazy"></span><span class="slot" title="Проводка"><img src="assets/icons/minecraft_redstone.png" alt="Проводка" loading="lazy"></span><span class="slot" title="Золотой блок"><img src="assets/icons/minecraft_gold_block.png" alt="Золотой блок" loading="lazy"></span><span class="slot" title="Осколок аметиста"><img src="assets/icons/minecraft_amethyst_shard.png" alt="Осколок аметиста" loading="lazy"></span><span class="slot" title="Золотой блок"><img src="assets/icons/minecraft_gold_block.png" alt="Золотой блок" loading="lazy"></span></div><span class="arrow" aria-hidden="true"></span><span class="slot out" title="Чип автоаптечки"><img src="assets/icons/minecraft_totem_of_undying.png" alt="Чип автоаптечки" loading="lazy"></span><figcaption>Чип автоаптечки</figcaption></figure>
+        <p>В руке спасает, когда вас вот-вот выведут из строя: ставит на ноги, лечит и защищает.
+        <code class="was">totem_of_undying</code></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="robots">
+  <div class="wrap">
+    <p class="kicker">Роботы</p>
+    <h2>Собираются из блоков — голова всегда блок управления</h2>
+    <p class="intro">Эти машины собирают из железа, меди и снега, поэтому они роботы — вместо
+    <code class="was">iron_golem</code> и его родни. Голова каждого — <span class="chip"><img src="assets/icons/minecraft_carved_pumpkin.png" alt="" loading="lazy">Блок управления</span>, тыквенный фонарь для этого не
+    годится.</p>
+    <div class="builds">
+      <figure class="shot"><img class="scene" src="assets/scenes/robot_iron.png" alt="Железный робот" loading="lazy"><figcaption><b>Железный робот</b> — четыре
+      железных блока буквой «Т»</figcaption></figure>
+      <figure class="shot"><img class="scene" src="assets/scenes/robot_copper.png" alt="Медный робот" loading="lazy"><figcaption><b>Медный робот</b> — медный
+      блок</figcaption></figure>
+      <figure class="shot"><img class="scene" src="assets/scenes/robot_snow.png" alt="Снегомёт" loading="lazy"><figcaption><b>Снегомёт</b> — два блока
+      снега</figcaption></figure>
+      <figure class="shot"><img class="scene" src="assets/scenes/gunship.png" alt="Штурмовик" loading="lazy"><figcaption><b>Штурмовик</b> — босс: железная «Т»,
+      блок управления в середине, сверху — Блок сенсоров ×3</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="systems">
+  <div class="wrap">
+    <p class="kicker">Системы</p>
+    <h2>Механики остались, объяснения — новые</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Модификации</h3>
+        <p>На снаряжение ставят моды. <span class="chip"><img src="assets/icons/minecraft_lapis_lazuli.png" alt="" loading="lazy">Мод</span> — расходник,
+        <span class="chip"><img src="assets/icons/minecraft_book.png" alt="" loading="lazy">Картридж мода</span> — носитель, <span class="chip"><img src="assets/icons/minecraft_enchanted_book.png" alt="" loading="lazy">Записанный картридж</span> — готовый мод, <span class="chip"><img src="assets/icons/minecraft_bookshelf.png" alt="" loading="lazy">Стойка картриджей</span> усиливает
+        <span class="chip"><img src="assets/icons/minecraft_enchanting_table.png" alt="" loading="lazy">Стол модификации</span>. Опыт — это <b>данные</b>: Фрагмент данных,
+        <span class="chip"><img src="assets/icons/minecraft_experience_bottle.png" alt="" loading="lazy">Накопитель данных</span>. <span class="chip"><img src="assets/icons/minecraft_anvil.png" alt="" loading="lazy">Наладочный стенд</span> и <span class="chip"><img src="assets/icons/minecraft_grindstone.png" alt="" loading="lazy">Стенд сброса</span> — стенды.</p>
+      </div>
+      <div class="card">
+        <h3>Проводка</h3>
+        <p>Редстоун — <span class="chip"><img src="assets/icons/minecraft_redstone.png" alt="" loading="lazy">Проводка</span>: платы и провода рухнувшего проекта, их достают из породы. Одиночный
+        провод ложится площадкой. Сигнальный факел, Электролампа.</p>
+      </div>
+      <div class="card">
+        <h3>Препараты</h3>
+        <p><span class="chip"><img src="assets/icons/minecraft_potion.png" alt="" loading="lazy">Препарат</span> (<code class="was">potion</code>) варят на <span class="chip"><img src="assets/icons/minecraft_brewing_stand.png" alt="" loading="lazy">Химическая установка</span>: базовые, метательные,
+        аэрозольные. Эффекты объяснены химией — например, <code class="was">invisibility</code> стала маскировкой.</p>
+      </div>
+      <div class="card">
+        <h3>Станции</h3>
+        <p><span class="chip"><img src="assets/icons/minecraft_beacon.png" alt="" loading="lazy">Силовая станция</span> собирается из <span class="chip"><img src="assets/icons/minecraft_nether_star.png" alt="" loading="lazy">Силовое ядро</span> и питает снаряжение всех рядом.
+        <span class="chip"><img src="assets/icons/minecraft_conduit.png" alt="" loading="lazy">Подводная станция</span> — то же под водой, её ядро — <span class="chip"><img src="assets/icons/minecraft_heart_of_the_sea.png" alt="" loading="lazy">Морское ядро</span>.</p>
+      </div>
+      <div class="card">
+        <h3>Выбыл из строя</h3>
+        <p>Игрок не погибает, а <b>выбывает из строя</b> — и возвращается в игру в точке появления. Животные и
+        люди мира погибают, как прежде: они не возвращаются.</p>
+      </div>
+      <div class="card">
+        <h3>Капсулы сборки</h3>
+        <p><code class="was">*_spawn_egg</code> — капсулы: из них собирают машину или выпускают существо. На каждой — портрет
+        того, кто в ней.</p>
+      </div>
+    </div>
+    <p class="note">Религиозной символики, суеверий и призраков в игре нет — ни в текстах, ни в текстурах.
+    Даже прицел стал кольцом.</p>
+  </div>
+</section>
+
+<section id="world">
+  <div class="wrap">
+    <p class="kicker">Мир</p>
+    <h2>Вулкан и Вершины</h2>
+    <div class="two">
+      <div class="card">
+        <h3>Вулкан</h3>
+        <p>Бывший <code class="was">the_nether</code> — действующий вулкан, где Cinder Company добывает серу и руду. Здесь
+        Вулканическая порода, вулканические пустоши и крепости, <span class="chip"><img src="assets/icons/minecraft_netherite_ingot.png" alt="" loading="lazy">Слиток жаропрочного сплава</span>. Работают машины
+        вулкана — дроны-горелки, аэростаты, шагающие погрузчики. Попасть сюда можно только бортом.</p>
+      </div>
+      <div class="card">
+        <h3>Вершины</h3>
+        <p>Бывший <code class="was">the_end</code> — острова <b>на тонких опорах</b> над морем облаков: ничто не висит в
+        воздухе. День и ночь под тёмным высотным небом, первый прилёт — утром. Острова из
+        Известняк, на них пустые высотные станции из сборных панелей, рядом — дирижабли, на борту —
+        <span class="chip"><img src="assets/icons/minecraft_elytra.png" alt="" loading="lazy">Ранцевое крыло</span>. Главный остров охраняет
+        Страж Вершин, его питают Зарядный излучатель. В финале вместо поэмы — запись бортового
+        самописца.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="bestiary">
+  <div class="wrap">
+    <p class="kicker">Бестиарий</p>
+    <h2>Кого вы встретите</h2>
+    <p class="intro">Каждый переделанный моб перерисован целиком, и у каждого свой голос: машины говорят
+    своими родными звуками через робот-фильтр.</p>
+
+    <div class="group">
+      <h3>Blackroad — банды Верхнего мира</h3>
+      <p>Разбойники дорог. Выходят ночью, грабят и берут пленных. С головорезов, налётчиков, падальщиков и пленников падают кусочки изумруда.</p>
+      <ul class="mobs"><li class="mob"><img src="assets/mobs/zombie.png" alt="Головорез" loading="lazy"><span class="mob-name">Головорез</span><code class="was">zombie</code></li><li class="mob"><img src="assets/mobs/husk.png" alt="Пустынный налётчик" loading="lazy"><span class="mob-name">Пустынный налётчик</span><code class="was">husk</code></li><li class="mob"><img src="assets/mobs/drowned.png" alt="Речной падальщик" loading="lazy"><span class="mob-name">Речной падальщик</span><code class="was">drowned</code></li><li class="mob"><img src="assets/mobs/zombie_villager.png" alt="Пленник" loading="lazy"><span class="mob-name">Пленник</span><code class="was">zombie_villager</code></li><li class="mob"><img src="assets/mobs/witch.png" alt="Химик" loading="lazy"><span class="mob-name">Химик</span><code class="was">witch</code></li><li class="mob"><img src="assets/mobs/pillager.png" alt="Разбойник" loading="lazy"><span class="mob-name">Разбойник</span><code class="was">pillager</code></li><li class="mob"><img src="assets/mobs/vindicator.png" alt="Громила" loading="lazy"><span class="mob-name">Громила</span><code class="was">vindicator</code></li><li class="mob"><img src="assets/mobs/zombie_horse.png" alt="Лошадь банды" loading="lazy"><span class="mob-name">Лошадь банды</span><code class="was">zombie_horse</code></li><li class="mob"><img src="assets/mobs/camel_husk.png" alt="Верблюд налётчиков" loading="lazy"><span class="mob-name">Верблюд налётчиков</span><code class="was">camel_husk</code></li><li class="mob"><img src="assets/mobs/zombie_nautilus.png" alt="Наутилус падальщиков" loading="lazy"><span class="mob-name">Наутилус падальщиков</span><code class="was">zombie_nautilus</code></li></ul>
+    </div>
+    <div class="group">
+      <h3>Cinder Company — люди вулкана</h3>
+      <p>Добытчики в респираторах. Обожжённые — рабочие, отравленные газом: не тронете — не тронут.</p>
+      <ul class="mobs"><li class="mob"><img src="assets/mobs/piglin.png" alt="Старатель" loading="lazy"><span class="mob-name">Старатель</span><code class="was">piglin</code></li><li class="mob"><img src="assets/mobs/piglin_brute.png" alt="Надзиратель" loading="lazy"><span class="mob-name">Надзиратель</span><code class="was">piglin_brute</code></li><li class="mob"><img src="assets/mobs/zombified_piglin.png" alt="Обожжённый" loading="lazy"><span class="mob-name">Обожжённый</span><code class="was">zombified_piglin</code></li></ul>
+    </div>
+    <div class="group">
+      <h3>Автоматы</h3>
+      <p>Наземные машины проекта. Стрелки — автоматы на светлой некрашеной стали: их видно ночью.</p>
+      <ul class="mobs"><li class="mob"><img src="assets/mobs/skeleton.png" alt="Автомат-стрелок" loading="lazy"><span class="mob-name">Автомат-стрелок</span><code class="was">skeleton</code></li><li class="mob"><img src="assets/mobs/stray.png" alt="Обледеневший автомат" loading="lazy"><span class="mob-name">Обледеневший автомат</span><code class="was">stray</code></li><li class="mob"><img src="assets/mobs/bogged.png" alt="Болотный автомат" loading="lazy"><span class="mob-name">Болотный автомат</span><code class="was">bogged</code></li><li class="mob"><img src="assets/mobs/parched.png" alt="Пустынный автомат" loading="lazy"><span class="mob-name">Пустынный автомат</span><code class="was">parched</code></li><li class="mob"><img src="assets/mobs/wither_skeleton.png" alt="Тяжёлый автомат" loading="lazy"><span class="mob-name">Тяжёлый автомат</span><code class="was">wither_skeleton</code></li><li class="mob"><img src="assets/mobs/evoker.png" alt="Автомат-сапёр" loading="lazy"><span class="mob-name">Автомат-сапёр</span><code class="was">evoker</code></li><li class="mob"><img src="assets/mobs/skeleton_horse.png" alt="Механическая лошадь" loading="lazy"><span class="mob-name">Механическая лошадь</span><code class="was">skeleton_horse</code></li><li class="mob"><img src="assets/mobs/creeper.png" alt="Самоходная мина" loading="lazy"><span class="mob-name">Самоходная мина</span><code class="was">creeper</code></li><li class="mob"><img src="assets/mobs/enderman.png" alt="Верхолаз" loading="lazy"><span class="mob-name">Верхолаз</span><code class="was">enderman</code></li><li class="mob"><img src="assets/mobs/endermite.png" alt="Ползун" loading="lazy"><span class="mob-name">Ползун</span><code class="was">endermite</code></li><li class="mob"><img src="assets/mobs/silverfish.png" alt="Ремонтник" loading="lazy"><span class="mob-name">Ремонтник</span><code class="was">silverfish</code></li><li class="mob"><img src="assets/mobs/creaking.png" alt="Маскировочный автомат" loading="lazy"><span class="mob-name">Маскировочный автомат</span><code class="was">creaking</code></li></ul>
+    </div>
+    <div class="group">
+      <h3>Дроны и аэростаты</h3>
+      <ul class="mobs"><li class="mob"><img src="assets/mobs/phantom.png" alt="Ночной дрон" loading="lazy"><span class="mob-name">Ночной дрон</span><code class="was">phantom</code></li><li class="mob"><img src="assets/mobs/vex.png" alt="Ударный дрон" loading="lazy"><span class="mob-name">Ударный дрон</span><code class="was">vex</code></li><li class="mob"><img src="assets/mobs/allay.png" alt="Дрон-курьер" loading="lazy"><span class="mob-name">Дрон-курьер</span><code class="was">allay</code></li><li class="mob"><img src="assets/mobs/breeze.png" alt="Пневмодрон" loading="lazy"><span class="mob-name">Пневмодрон</span><code class="was">breeze</code></li><li class="mob"><img src="assets/mobs/blaze.png" alt="Дрон-горелка" loading="lazy"><span class="mob-name">Дрон-горелка</span><code class="was">blaze</code></li><li class="mob"><img src="assets/mobs/guardian.png" alt="Подводный дрон" loading="lazy"><span class="mob-name">Подводный дрон</span><code class="was">guardian</code></li><li class="mob"><img src="assets/mobs/elder_guardian.png" alt="Дрон-глушитель" loading="lazy"><span class="mob-name">Дрон-глушитель</span><code class="was">elder_guardian</code></li><li class="mob"><img src="assets/mobs/ghast.png" alt="Аэростат" loading="lazy"><span class="mob-name">Аэростат</span><code class="was">ghast</code></li><li class="mob"><img src="assets/mobs/happy_ghast.png" alt="Транспортный аэростат" loading="lazy"><span class="mob-name">Транспортный аэростат</span><code class="was">happy_ghast</code></li></ul>
+    </div>
+    <div class="group">
+      <h3>Рои</h3>
+      <p>Кубы — роевые роботы из модулей. Разбитый рой, обычный или жаростойкий, распадается на рои поменьше.</p>
+      <ul class="mobs"><li class="mob"><img src="assets/mobs/slime.png" alt="Рой" loading="lazy"><span class="mob-name">Рой</span><code class="was">slime</code></li><li class="mob"><img src="assets/mobs/magma_cube.png" alt="Жаростойкий рой" loading="lazy"><span class="mob-name">Жаростойкий рой</span><code class="was">magma_cube</code></li><li class="mob"><img src="assets/mobs/sulfur_cube.png" alt="Серный сборщик" loading="lazy"><span class="mob-name">Серный сборщик</span><code class="was">sulfur_cube</code></li></ul>
+    </div>
+    <div class="group">
+      <h3>Роботы и тяжёлые машины</h3>
+      <ul class="mobs"><li class="mob"><img src="assets/mobs/iron_golem.png" alt="Железный робот" loading="lazy"><span class="mob-name">Железный робот</span><code class="was">iron_golem</code></li><li class="mob"><img src="assets/mobs/copper_golem.png" alt="Медный робот" loading="lazy"><span class="mob-name">Медный робот</span><code class="was">copper_golem</code></li><li class="mob"><img src="assets/mobs/snow_golem.png" alt="Снегомёт" loading="lazy"><span class="mob-name">Снегомёт</span><code class="was">snow_golem</code></li><li class="mob"><img src="assets/mobs/strider.png" alt="Шагающий погрузчик" loading="lazy"><span class="mob-name">Шагающий погрузчик</span><code class="was">strider</code></li><li class="mob"><img src="assets/mobs/shulker.png" alt="Выдвижная турель" loading="lazy"><span class="mob-name">Выдвижная турель</span><code class="was">shulker</code></li><li class="mob"><img src="assets/mobs/warden.png" alt="Глубинный страж" loading="lazy"><span class="mob-name">Глубинный страж</span><code class="was">warden</code></li><li class="mob"><img src="assets/mobs/wither.png" alt="Штурмовик" loading="lazy"><span class="mob-name">Штурмовик</span><code class="was">wither</code></li><li class="mob"><img src="assets/mobs/ender_dragon.png" alt="Страж Вершин" loading="lazy"><span class="mob-name">Страж Вершин</span><code class="was">ender_dragon</code></li></ul>
+    </div>
+    <div class="group">
+      <h3>Животные</h3>
+      <p>Животные остаются животными. Одичавший вепрь — Бешеный вепрь, а не нежить.</p>
+      <ul class="mobs"><li class="mob"><img src="assets/mobs/zoglin.png" alt="Бешеный вепрь" loading="lazy"><span class="mob-name">Бешеный вепрь</span><code class="was">zoglin</code></li></ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Grounded 1.0.0 · Minecraft 26.3 · Fabric</span>
+    <span><a href="https://github.com/Baudi2/grounded/releases">Все версии</a> · <a href="en/" hreflang="en">English</a></span>
+    <span>Не является официальным продуктом Minecraft. Не одобрено Mojang или Microsoft и не связано с ними.</span>
+  </div>
+</footer>
+
+</body>
+</html>
