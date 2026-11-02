@@ -133,7 +133,7 @@ code.was { color: var(--muted); background: var(--panel-2); border: 1px solid va
 .modmap table { width: 100%; border-collapse: collapse; font-size: 15px; }
 .modmap th { text-align: left; font-weight: 600; color: var(--muted); padding: 8px 8px 8px 0; border-bottom: 1px solid var(--line); }
 .modmap td { padding: 6px 8px 6px 0; border-bottom: 1px solid var(--line); vertical-align: baseline; }
-.modmap code.was { font-size: 13px; }
+.modmap code.was { display: table; font-size: 12px; margin-top: 3px; }
 @media (max-width: 735px) { .modmap table + table thead { display: none; } }
 
 /* --- recipes: the game's crafting grid --- */
